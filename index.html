@@ -5,25 +5,49 @@
         <title>Garrit</title>
         <style>
 
+        a
+        {
+            color: #00ffff;
+        }
+
         html
         {
-            background-color: #00ffff;
-            color: #000000;
-            height: 100%;
+            background-color: #000000;
+            color: #ffffff;
+            font: normal 14pt "Helvetica", "Verdana", sans-serif;
+            line-height: 1.3em;
         }
 
         body
         {
-            display: table;
-            width: 100%;
-            height: 100%;
+            margin: 0;
         }
 
         h1
         {
-            display: table-cell;
+            background-color: #00ffff;
+            font-size: 100%;
             text-align: center;
-            vertical-align: middle;
+            margin: 0;
+            padding: 1em;
+        }
+
+        div#footer
+        {
+            font-size: 60%;
+            text-align: center;
+            margin-top: 4em;
+        }
+
+        div#main
+        {
+            margin: 1em auto;
+            max-width: 40em;
+        }
+
+        p
+        {
+            margin: 0 0 1em;
         }
 
         </style>
@@ -31,5 +55,28 @@
     </head>
     <body>
         <h1><img src="logo.svg" alt="Garrit"></h1>
+        <div id="main">
+            <p><a href="https://github.com/Garrit/">Garrit</a> was
+            <a href="https://github.com/MrDOS">Samuel&nbsp;Coleman's</a>
+            <a href="http://cs.acadiau.ca/comp4983.html">final&nbsp;project</a> for
+            his Bachelor&nbsp;of&nbsp;Computer&nbsp;Science at the
+            <a href="http://cs.acadiau.ca/">Jodrey&nbsp;School of Computer&nbsp;Science</a>
+            at Acadia&nbsp;University. The concept was developed over a period
+            of two years prior to its implementation during the winter semester
+            of the 2014-2015 school year.</p>
+            <ul>
+                <li>Read about the project in its <a href="https://github.com/Garrit/docs/releases/download/v1.0.0/spec.pdf">specification</a></li>
+                <li>Read about the <a href="https://github.com/Garrit/docs/releases/download/v1.0.0/ref.pdf">reference implementations</a></li>
+                <li>Read the <a href="https://github.com/Garrit/docs/releases/download/v1.0.0/problems.pdf">problem definition specification</a></li>
+                <li>Browse the source code for: <ul>
+                    <li>the <a href="https://github.com/Garrit/hub">negotiator</a></li>
+                    <li>the <a href="https://github.com/Garrit/subport">submitter</a></li>
+                    <li>the <a href="https://github.com/Garrit/executor">executor</a></li>
+                    <li>the <a href="https://github.com/Garrit/judge">judge</a></li>
+                    <li>the <a href="https://github.com/Garrit/reporter">reporter</a></li>
+                </ul></li>
+            </ul>
+        </div>
+        <div id="footer">Copyright &copy; 2015 Samuel Coleman</div>
     </body>
 </html>
